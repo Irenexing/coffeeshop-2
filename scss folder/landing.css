@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 100% "Open Sans";
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 3.75rem;
+  font-weight: 300;
+  padding: 2rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2.0625rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 1.3125rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFF0ED;
+  align-items: center;
+  padding: 0;
+}
+.navbar__list {
+  display: inline-flex;
+}
+.navbar__color {
+  text-decoration: none;
+  color: black;
+  padding: 1.25rem;
+}
+.navbar__shop-now-color {
+  color: #5BACC3;
+}
+.navbar__nitro {
+  text-decoration: none;
+  color: black;
+}
+.navbar__title {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer {
+  font-size: 2.0625rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #FFF0ED;
+}
+.footer__icon-img {
+  width: 3.125rem;
+}
+.footer__img-begin {
+  opacity: 25%;
+  width: 7.5rem;
+  position: relative;
+  right: 2rem;
+  top: -2rem;
+}
+.footer__img-end {
+  opacity: 25%;
+  width: 7.5rem;
+  position: relative;
+  left: 2.5rem;
+  top: 1.5rem;
+}
+
+.button {
+  font-size: 1.3125rem;
+  font-weight: 400;
+  background: #5BACC3;
+  color: #FFF;
+  padding: 1.25rem;
+  border-color: #5BACC3;
+  border-style: solid;
+  min-width: 11.25rem;
+  max-width: 80%;
+  position: relative;
+}
+.button__border {
+  border: 2px solid #393939;
+  max-width: 11.25rem;
+  height: 4.25rem;
+  position: relative;
+  top: -4.6875rem;
+  right: 0.3125rem;
+}
+.button__border:hover {
+  top: -4.3rem;
+  right: 0rem;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.button__viewall {
+  margin: 5rem auto 1rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.discount-text {
+  font-size: 2.8125rem;
+  font-weight: 400;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  max-width: 90%;
+  background: #393939;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem;
+  margin: 10rem auto;
+  -webkit-animation: flash 2.5s infinite alternate;
+          animation: flash 2.5s infinite alternate;
+}
+
+.product {
+  background: #F7F7F7;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.product-cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+.product-card {
+  background: #FFF;
+  min-width: 20.625rem;
+  max-width: 21.875rem;
+  min-height: 27.5rem;
+  max-height: 28.75rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.3125rem 0.5625rem -0.0625rem rgba(0, 0, 0, 0.25);
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.product-card__img {
+  min-height: 15rem;
+  max-height: 28.75rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.product-card__price {
+  color: #5BACC3;
+  font-size: 2.0625rem;
+  font-weight: bold;
+  text-align: center;
+  background: #FFF0ED;
+}
+.product-card__description {
+  display: flex;
+  flex-direction: column;
+}
+.product-card__description-container {
+  background: #FFF0ED;
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  align-items: center;
+}
+.product-card__item {
+  margin-bottom: 0;
+}
+.product-card__quantity {
+  height: auto;
+  margin-top: 0;
+  padding-bottom: 1rem;
+  color: #909090;
+}
+.product__title {
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
+}
+
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 3rem;
+  background-color: #FFF0ED;
+}
+.about__text {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  padding: 3rem;
+}
+.about__coffee {
+  margin: 2rem 20rem 2rem 0;
+}
+.about__img {
+  padding: 0rem 5rem 2rem 0rem;
+}
+
+.hero {
+  display: inline-flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  margin: 5rem;
+}
+.hero__img {
+  background-image: url("../assets folder/coldbrewbackground.png");
+  min-width: 25rem;
+  max-width: 31.25rem;
+  height: auto;
+  padding: 1.25rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+}
+.hero__icon {
+  width: 3.125rem;
+  margin-bottom: 1.25rem;
+}
+.hero__icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__description {
+  justify-content: flex-start;
+  width: 30rem;
+}
+
+.hero__img:hover > a {
+  -webkit-animation: rotation 2s infinite linear;
+          animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes flash {
+  from {
+    background-color: #393939;
+  }
+  to {
+    background-color: #5BACC3;
+  }
+}
+@keyframes flash {
+  from {
+    background-color: #393939;
+  }
+  to {
+    background-color: #5BACC3;
+  }
+}/*# sourceMappingURL=landing.css.map */

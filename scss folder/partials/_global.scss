@@ -1,0 +1,72 @@
+$font-stack: 'Open Sans';
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font: 100% $font-stack;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3.75rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 3.75rem;
+    font-weight: 300;
+    padding: 2rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2.0625rem;
+    font-weight: 300;
+}
+
+p{
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1.3125rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF0ED;
+    align-items: center;
+    padding: 0;
+    &__list {
+        display: inline-flex;
+    }
+    &__color {
+        text-decoration: none;
+        color: black;
+        padding: 1.25rem;
+    }
+    &__shop-now-color {
+        color: #5BACC3;
+    }
+    &__nitro {
+        text-decoration: none;
+        color: black;
+    }
+    &__title {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+}

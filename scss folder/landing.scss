@@ -1,0 +1,224 @@
+@use './partials/global' as *;
+@use './partials/colors';
+@use './partials/fontcolors';
+
+.footer {
+    font-size: 2.0625rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: colors.$primary-pink;
+    &__icon-img {
+        width: 3.125rem;
+    }
+    &__img-begin {
+        opacity: 25%;
+        width: 7.5rem;
+        position: relative;
+        right: 2rem;
+        top: -2rem;
+    }
+    &__img-end {
+        opacity: 25%;
+        width: 7.5rem;
+        position: relative;
+        left: 2.5rem;
+        top: 1.5rem;
+    }
+}
+
+
+.button {
+    font-size: 1.3125rem;
+    font-weight: 400;
+    background: colors.$primary-blue;
+    color: fontcolors.$secondary;
+    padding: 1.25rem;
+    border-color: #5BACC3;
+    border-style: solid;
+    min-width: 11.25rem;
+    max-width: 80%;
+    position: relative;
+       
+    &__border {
+    border: 2px solid #393939;
+    max-width: 11.25rem;
+    height: 4.25rem;
+    position: relative;
+    top: -4.6875rem;
+    right: .3125rem;
+        &:hover {
+            top: -4.3rem;
+            right: 0rem;
+        }
+    }
+
+    &-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__viewall{
+        margin: 5rem auto 1rem auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.discount-text {
+    font-size: 2.8125rem;
+    font-weight: 400;
+    min-width: min-content; 
+    max-width: 90%;
+    background: colors.$natural-colors-graphite;
+    color: fontcolors.$secondary;
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem;
+    margin: 10rem auto;
+    animation: flash 2.5s infinite alternate;
+}
+
+.product {
+    background: colors.$natural-colors-lightgray;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    
+    &-cards {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    &-card {
+        background: colors.$natural-colors-white;
+        min-width: 20.625rem;
+        max-width: 21.875rem;  
+        min-height: 27.5rem;
+        max-height: 28.75rem;
+        border-radius: .625rem;
+        box-shadow: 0 .3125rem .5625rem -0.0625rem rgba(0, 0, 0, 0.25);
+        background-size: cover;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        &__img {
+            min-height: 15rem;
+            max-height: 28.75rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+        }
+       &__price { 
+            color:#5BACC3;
+            font-size: 2.0625rem;
+            font-weight: bold;
+            text-align: center;
+            background: colors.$primary-pink;
+        }
+        &__description {
+            display: flex; 
+            flex-direction: column;
+            &-container {
+                background: colors.$primary-pink;
+                display: flex; 
+                justify-content: space-evenly;
+                height: auto;
+                align-items: center;
+            }
+        }
+        &__item {
+                margin-bottom: 0;
+        }
+        &__quantity {
+            height:auto;
+            margin-top: 0;
+            padding-bottom: 1rem;
+            color: fontcolors.$alternate;
+        }
+    }
+    &__title {
+        text-align: center;
+        padding: 2rem;
+        margin: 0;
+    }
+
+}
+
+.about {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 0 3rem;
+    background-color:#FFF0ED;
+    &__text {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+        padding: 3rem;
+    }
+    &__coffee {
+        margin: 2rem 20rem 2rem 0;
+    }
+    &__img {
+        padding: 0rem 5rem 2rem 0rem;
+    }
+}
+
+.hero {
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    margin: 5rem;
+    &__img {    
+        background-image: url("../assets folder/coldbrewbackground.png");
+        min-width: 25rem;
+        max-width: 31.25rem;
+        height: auto;
+        padding: 1.25rem;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        background-size: cover;
+    }
+    &__icon {
+        width: 3.125rem;
+        margin-bottom: 1.25rem;
+    }
+    &__icons-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__description {
+        justify-content: flex-start;
+        width: 30rem;
+    }
+}
+
+.hero__img:hover > a {
+    animation: rotation 2s infinite linear;
+    }
+      
+    @keyframes rotation {
+    from {
+       transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+@keyframes flash {
+    from {
+       background-color: colors.$natural-colors-graphite;
+    }
+    to {
+      background-color: colors.$primary-blue;
+    }
+}
